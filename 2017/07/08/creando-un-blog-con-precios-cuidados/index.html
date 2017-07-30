@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Hola! Para empezar con ésto, te voy a contar como hice para armar el blog en una tarde y sin gastar nada más que un poco de tiempo. Opciones al momento de armar el blogPor supuesto, lo primero que ten">
+<meta name="keywords" content="Hexo,Nodejs,GitHub,GitHub Pages">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Creando Un Blog Con Precios Cuidados">
+<meta property="og:url" content="http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/index.html">
+<meta property="og:site_name" content="Dago&#39;s Blog">
+<meta property="og:description" content="Hola! Para empezar con ésto, te voy a contar como hice para armar el blog en una tarde y sin gastar nada más que un poco de tiempo. Opciones al momento de armar el blogPor supuesto, lo primero que ten">
+<meta property="og:updated_time" content="2017-07-30T04:45:00.492Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Creando Un Blog Con Precios Cuidados">
+<meta name="twitter:description" content="Hola! Para empezar con ésto, te voy a contar como hice para armar el blog en una tarde y sin gastar nada más que un poco de tiempo. Opciones al momento de armar el blogPor supuesto, lo primero que ten">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Creando Un Blog Con Precios Cuidados</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about-me/">About Me</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2017/07/05/pilot/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Post Anterior</span>
+      <span id="i-next" class="info" style="display:none;">Siguiente Post</span>
+      <span id="i-top" class="info" style="display:none;">Volver Arriba</span>
+      <span id="i-share" class="info" style="display:none;">Compartir Post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/&text=Creando Un Blog Con Precios Cuidados"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/&title=Creando Un Blog Con Precios Cuidados"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/&is_video=false&description=Creando Un Blog Con Precios Cuidados"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Creando Un Blog Con Precios Cuidados&body=Mira este articulo: http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Opciones-al-momento-de-armar-el-blog"><span class="toc-number">1.</span> <span class="toc-text">Opciones al momento de armar el blog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Generando-contenido"><span class="toc-number">2.</span> <span class="toc-text">Generando contenido</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Diseno-y-Templates"><span class="toc-number">3.</span> <span class="toc-text">Diseño y Templates</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Algunos-detalles-mas…"><span class="toc-number">4.</span> <span class="toc-text">Algunos detalles más…</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Creando Un Blog Con Precios Cuidados
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Dago's Blog</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-07-08T15:08:11.000Z" itemprop="datePublished">08/07/2017</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/GitHub/">GitHub</a>, <a class="tag-link" href="/tags/GitHub-Pages/">GitHub Pages</a>, <a class="tag-link" href="/tags/Hexo/">Hexo</a>, <a class="tag-link" href="/tags/Nodejs/">Nodejs</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Hola! Para empezar con ésto, te voy a contar como hice para armar el blog en una tarde y sin gastar nada más que un poco de tiempo.</p>
+<h2 id="Opciones-al-momento-de-armar-el-blog"><a href="#Opciones-al-momento-de-armar-el-blog" class="headerlink" title="Opciones al momento de armar el blog"></a>Opciones al momento de armar el blog</h2><p>Por supuesto, lo primero que tenemos que hacer antes de arrancar con algo es analizar las herramientas que tenemos disponibles, sino terminamos golpeando un clavo con un destornillador… Cuando pensé en arrancar con ésto, lo primero que hice fue empezar a mirar un poco las tecnologías con las que estaban hechas los blogs que frecuento. De ese análisis, con las opciones que me quedé fueron básicamente:</p>
+<ul>
+<li>Blogspot</li>
+<li>GitHub Pages</li>
+<li>Ghost</li>
+<li>Wordpress + Hosting Propio</li>
+</ul>
+<p>Ghost y Hostear una solución estilo Wordpress las descarté por ahora, por el simple hecho de son soluciones pagas y/o requieren tiempo en mantenimiento; y de las opciones restantes, opté por GitHub Pages porque me pareció la solución más flexible para lo que tenía en mente. Blogspot no me parece una mala opción para armar un blog de forma sencilla, rápida y de bajo costo, pero con GitHub Pages podía “meter un poco más de mano”, así que me subí a ese tren.</p>
+<h2 id="Generando-contenido"><a href="#Generando-contenido" class="headerlink" title="Generando contenido"></a>Generando contenido</h2><p>La solución que ofrece GitHub Pages se basa en una idea bastante sencilla: “tirame HTML a un repositorio y yo me encargo del resto”, lo cual es excelente! Peeeero, ponernos a generar a mano un blog escribiendo en HTML puro tampoco tenía demasiado sentido, ya que el tiempo vale oro, y dijimos que ésto iba a ser con precios cuidados! Acá es donde entra en juego el otro protagonista de la historia: <a href="https://hexo.io" target="_blank" rel="external">Hexo</a>.</p>
+<p>Hexo es básicamente una herramienta que permite tomar (o crear) un template base que indica “como” se va a generar el HTML final a mostrar, y una vez configurado, simplemente centrarnos en escribir con una sintaxis sencilla en texto plano (utilizando <a href="https://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a>) nuestro contenido. Ésto tiene una gran ventaja para los que no nos llevamos del todo bien con el diseño, y es que sólo nos tenemos que enfocar en escribir, nada de pensar en HTML, CSS, y demás.</p>
+<p>En la <a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/" target="_blank" rel="external">documentación oficial de GitHub Pages</a> indican como sugerencia utilizar <a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a>, que es una herramienta muy similar a Hexo pero hecha en Ruby. Como no tengo demasiada experiencia con Ruby, y en mi equipo tenía instalado casi todo lo necesario para usar Hexo (básicamente se necesita Node, NPM, un editor de textos y no mucho más), directamente opté por ésta última herramienta.</p>
+<h2 id="Diseno-y-Templates"><a href="#Diseno-y-Templates" class="headerlink" title="Diseño y Templates"></a>Diseño y Templates</h2><p>Como ya dije más arriba, el diseño no es lo mío, por lo tanto fue una característica más a tener en cuenta al momento de decidir usar Hexo. Dentro de la <a href="https://hexo.io/themes/" target="_blank" rel="external">web oficial</a> hay varios themes libres de muy buena calidad. El que estoy utilizando actualmente es <a href="https://probberechts.github.io/cactus-dark/" target="_blank" rel="external">Cactus Dark</a>, con unas modificaciones mínimas, principalmente en lo que tiene que ver con el idioma.</p>
+<h2 id="Algunos-detalles-mas…"><a href="#Algunos-detalles-mas…" class="headerlink" title="Algunos detalles más…"></a>Algunos detalles más…</h2><p>Por último, como comentario, GitHub Pages hace un deploy automático de la última versión del branch <em>master</em> de nuestro repositorio en cada commit. Es decir, lo único que tenemos que hacer para actualizar el blog es hacer un push de los archivos resultantes generados por Hexo (hasta tiene un comando para hacer ésto por nosotros :) ) y después de unos minutos ya vamos a estar viendo los cambios reflejados en la web.</p>
+<p>Dado que el branch <em>master</em> se usa para la parte “pública” del sitio, no se van a versionar en dicho branch los fuentes a partir de los cuales Hexo genera el contenido. Para solucionar esto, lo que hice fue crear un branch más en el repositorio totalmente independiente de master, donde se guardan los fuentes propiamente dichos. Debemos tener en cuenta que los branches <em>master</em> y <em>source</em> (como lo llamé en mi caso) nunca se van a unir entre si ya que su contenido difiere totalmente, es decir, en la práctica actuarían como dos “repositorios” totalmente independientes.</p>
+<p>Hasta acá llego por hoy, en el próximo post voy a hacer un pequeño resumen de cómo se usa Hexo y cómo es el proceso de exportar y subir el sitio. Espero que te haya resultado útil!</p>
+<p>Saludos y Happy Blogging!</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about-me/">About Me</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Opciones-al-momento-de-armar-el-blog"><span class="toc-number">1.</span> <span class="toc-text">Opciones al momento de armar el blog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Generando-contenido"><span class="toc-number">2.</span> <span class="toc-text">Generando contenido</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Diseno-y-Templates"><span class="toc-number">3.</span> <span class="toc-text">Diseño y Templates</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Algunos-detalles-mas…"><span class="toc-number">4.</span> <span class="toc-text">Algunos detalles más…</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/&text=Creando Un Blog Con Precios Cuidados"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/&title=Creando Un Blog Con Precios Cuidados"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/&is_video=false&description=Creando Un Blog Con Precios Cuidados"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Creando Un Blog Con Precios Cuidados&body=Mira este articulo: http://serafincpd.github.io/2017/07/08/creando-un-blog-con-precios-cuidados/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Compartir</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Volver Arriba</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    <a href="/license">
+    Copyright &copy; 2017 Serafin Cepeda
+    </a>
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about-me/">About Me</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-102168761-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
