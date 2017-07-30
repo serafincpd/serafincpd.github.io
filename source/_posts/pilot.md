@@ -1,5 +1,6 @@
 ---
 title: S01 E00 - Pilot
+date: 2017-07-05 12:08:11
 ---
 Just another blog about... Tecnología, Software, Programación, Seguridad, y otras hierbas...
 
@@ -19,7 +20,7 @@ Por último (y dejo de filosofar sobre mi vida así no te aburrís de entrada :)
 
 ¿Por qué te conté todo eso? No, no era porque quería espantarte de entrada y que dejes de leer, es porque quiero que entiendas de que va ésto. Va, en realidad, ni yo sé qué va a salir de ésto, pero la idea en un principio es tratar de escribir sobre lo que te dije en el primer renglón. Como profesionales del mundo IT, sabemos que los problemas son moneda corriente... Casi que podríamos decir que si no tenés problemas, es que los tenés pero todavía no te diste cuenta! Y es que si querés hacer las cosas bien, siempre hay algo para cambiar o mejorar (cosa que aplica igualmente para cualquier aspecto en la vida, no? Si, voy a dejar de irme de tema... ;) ). La idea es esa, tratar de contarte como resolví o intenté resolver alguna cuestión que se me presentó trabajando, investigando, pensando, o lo que sea... 
 
-¿Te va a interesar lo que escribo? Puede que si, puede que no, pero voy a tratar de hacer mejor esfuerzo... Obviamente, espero que me leas y que te lleves algo, pero en última instancia, cada vez que escribimos nos sirve de ayuda memoria para ver que sabíamos, que pensábamos, o en qué mejoramos con el paso del tiempo! En fin, si te sirve a vos también, buenísimo para ambos!
+¿Te va a interesar lo que escribo? Puede que si, puede que no, pero voy a tratar de hacer el mejor esfuerzo... Obviamente, espero que me leas y que te lleves algo, pero en última instancia, cada vez que escribimos nos sirve de ayuda memoria para ver que sabíamos, que pensábamos, o en qué mejoramos con el paso del tiempo! En fin, si te sirve a vos también, buenísimo para ambos!
 
 ### Entonces, ¿Cómo sigue ésto?
 
