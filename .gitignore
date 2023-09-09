@@ -1,0 +1,22 @@
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+_site/
+.sass-cache/
+*.swp
+pkg/
+test/
+_deploy/*
+Rakefile
+.jekyll-metadata
+/.idea/
+
+# Local dir to add backup of original demo for future use
+_bak/
