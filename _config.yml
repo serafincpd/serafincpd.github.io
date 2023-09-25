@@ -138,7 +138,7 @@ syntax-highlight: True
 # Contact #
 ###########
 
-# email: "hola@serafincpd.com.ar"
+email: "hola@serafincpd.com.ar"
 
 
 # Set a url pointing to your publish PGP Public Key here, and it will appear in the Contact section
