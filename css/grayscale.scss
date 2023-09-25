@@ -212,6 +212,9 @@ a {
             }
         }
     }
+    @media(max-width:768px) {
+        height: 100%;
+    }
 }
 
 @-webkit-keyframes pulse {
