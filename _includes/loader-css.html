@@ -1,0 +1,178 @@
+<style>
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: start;
+  /* animation: fadeOut 12s ease forwards; */
+  z-index: 999999;
+}
+
+.boot-messages {
+  font-family: monospace;
+  color: white;
+  overflow: hidden;
+  text-align: left;
+}
+
+.boot-messages pre {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.message {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: typeWriter 1.3s steps(300) 1s forwards, fadeIn 0.7s ease forwards;
+}
+
+.msg-loading-gui {
+  margin-top: 10% !important;
+}
+
+.ok-message {
+  color: green;
+}
+
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.dot {
+  font-size: 24px;
+  color: white;
+  margin: 0 5px;
+  animation: dotColorChange 1s infinite;
+}
+
+@keyframes typeWriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dotColorChange {
+  0%, 10% {
+    color: white;
+  }
+  20%, 30% {
+    color: green;
+  }
+  40%, 50% {
+    color: white;
+  }
+}
+
+.message:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.message:nth-child(2) {
+  animation-delay: 1s;
+}
+.message:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.message:nth-child(4) {
+  animation-delay: 2s;
+}
+.message:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.message:nth-child(6) {
+  animation-delay: 3s;
+}
+.message:nth-child(7) {
+  animation-delay: 3.5s;
+}
+.message:nth-child(8) {
+  animation-delay: 4s;
+}
+.message:nth-child(9) {
+  animation-delay: 4.5s;
+}
+.message:nth-child(10) {
+  animation-delay: 5s;
+}
+.message:nth-child(11) {
+  animation-delay: 5.5s;
+}
+.message:nth-child(12) {
+  animation-delay: 6s;
+}
+.message:nth-child(13) {
+  animation-delay: 6.5s;
+}
+.message:nth-child(14) {
+  animation-delay: 7s;
+}
+.message:nth-child(15) {
+  animation-delay: 7.5s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.dot:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+</style>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log('document loaded')
+
+    window.addEventListener("load", function () {
+      var loader = document.querySelector("#loader");
+      loader.style.animation = "fadeOut 1s linear 2s forwards";
+
+      setTimeout(function(){
+        loader.remove();
+      }, 3000);
+    });
+  });
+</script>
