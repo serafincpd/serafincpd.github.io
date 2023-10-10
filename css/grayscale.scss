@@ -252,12 +252,12 @@ a {
 }
 
 .content-section {
-    margin-top: 100px;
+    margin-top: 20px;
     padding-top: 100px;
-    @media(min-width:767px) {
-        margin-top: 125px;
-        padding-top: 125px;
-    }
+    // @media(min-width:767px) {
+    //     margin-top: 125px;
+    //     padding-top: 125px;
+    // }
     /* Added in { Personal } for responsive images in posts and section contents */
     img {
         display: block;
