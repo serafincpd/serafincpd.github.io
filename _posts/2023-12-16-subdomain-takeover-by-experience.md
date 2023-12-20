@@ -8,7 +8,7 @@ tags: [ 'security' ]
 
 ![Hoodie](/img/posts/subdomain-takeover-by-experience/hoodie.png)
 
-Un día me pasaron como tarea hacer limpieza de algunos recursos que ya no estaban en uso en la cuenta de Azure de la empresa, era un proyecto que había iniciado hacia unos meses atrás, y por cuestiones de política de la empresa había quedado parado un tiempo, con lo cual algunos recursos se apagaron y dieron de baja. Luego el proyecto se retomó con otro foco, con lo cual varias de las cosas que se habían creado en la nube estaban totalmente obsoletas. Dentro de las tareas, una de ellas era analizar que subdominios del dominio principal de la empresa, que se habían usado para el proyecto, ya no estaban más en uso.
+Un día me pasaron como tarea hacer limpieza de algunos recursos que ya no estaban en uso en la cuenta de Azure de una empresa en la que trabajaba, era un proyecto que había iniciado hacia unos meses atrás, y por cuestiones de política de la empresa había quedado parado un tiempo, con lo cual algunos recursos se apagaron y dieron de baja. Luego el proyecto se retomó con otro foco, con lo cual varias de las cosas que se habían creado en la nube estaban totalmente obsoletas. Dentro de las tareas, una de ellas era analizar que subdominios del dominio principal de la empresa, que se habían usado para el proyecto, ya no estaban más en uso.
 
 Luego de revisar algunos documentos y el código de algunas de las apps que se habían desplegado y ya no se iban a utilizar, arme una lista de dominios a validar, y empecé a chequear uno por uno a donde estaban dirigidos, algunos eran registros A, otros eran alias CNAME a otros registros A del mismo dominio, y otros alias a dominios que crea Azure al crear algunos tipos de recursos.
 
