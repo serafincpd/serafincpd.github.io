@@ -1,0 +1,19 @@
+
+  <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
+  {%- if page.layout == 'post' %}
+  <meta property="og:title" content="{{page.title}}">
+  <meta property="og:type" content="article" />
+    {%- if page.seo.image %}
+  <meta property="og:image" content="{{page.seo.image | prepend: site.baseurl}}">
+    {%- endif %}
+  <meta property="og:url" content="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
+  <meta name="twitter:card" content="summary_large_image">
+    {%- if page.seo.description %}
+  <meta property="og:description" content="{{page.seo.description}}">
+    {%- else %}
+  <meta property="og:description" content="{{page.content | strip_html | markdownify | remove: '<p>' | truncatewords: 20}}">
+    {%- endif %}
+  <meta property="og:site_name" content="{{site.title}}">
+  <meta name="twitter:image:alt" content="{{page.title}}">
+  <meta name="twitter:site" content="@serafincpd">
+  {%- endif %}
