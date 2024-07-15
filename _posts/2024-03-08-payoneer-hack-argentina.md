@@ -4,6 +4,8 @@ section-type: post
 title: Analizando algunos aspectos del hack a cuentas de Payoneer en Argentina
 category: tech
 tags: [ 'security' ]
+seo:
+  image: '/img/posts/payoneer-hack-argentina/sms-1.png'
 ---
 
 Como ya es de público conocimiento, durante Enero se vaciaron varias cuentas de Payoneer de usuarios residentes en Argentina. Si bien existen varias notas y análisis al respecto de cómo fue la cadena de ataque, me gustaría compartirles por este medio lo que pude analizar en el momento, a partir de algunos de los SMS que recibí durante esos días.
