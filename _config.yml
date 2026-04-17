@@ -121,7 +121,6 @@ pinterest-share: False
 pocket-share: False
 vkontakte-share: False
 
-# disqus-shortname: "personal-jekyll-theme"
 
 syntax-highlight: True
 
