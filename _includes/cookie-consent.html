@@ -1,0 +1,71 @@
+{% if site.google-tracking-id %}
+
+<div id="cookie-banner">
+  <p>Este sitio utiliza Cookies de terceros para herramientas analíticas.</p>
+  <div class="cookie-buttons">
+    <button id="cookie-accept">Entendido</button>
+  </div>
+</div>
+
+<style>
+#cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  color: #fff;
+  padding: 16px 24px;
+  z-index: 99998;
+  border-top: 1px solid #333;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#cookie-banner p {
+  margin: 0;
+  flex: 1;
+  font-size: 12px;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.cookie-buttons button {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 12px;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+#cookie-accept:hover {
+  background: #00cdff;
+  border-color: #00cdff;
+  color: #000;
+}
+</style>
+
+<script>
+(function () {
+  if (localStorage.getItem('cookie-noticed')) return;
+
+  var banner = document.getElementById('cookie-banner');
+  banner.style.display = 'flex';
+
+  document.getElementById('cookie-accept').addEventListener('click', function () {
+    localStorage.setItem('cookie-noticed', 'true');
+    banner.style.display = 'none';
+  });
+}());
+</script>
+
+{% endif %}

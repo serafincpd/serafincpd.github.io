@@ -1,11 +1,9 @@
-version: "3"
-
 services:
   jekyll:
-    image: jekyll/jekyll:3.8.6
+    build: .
     ports:
       - "4000:4000"
-    command: jekyll serve --watch --host "0.0.0.0" --config _config.yml,_config.dev.yml
+    command: bash -c "bundle install && bundle exec jekyll serve --watch --host '0.0.0.0' --config _config.yml,_config.dev.yml"
     volumes:
       - .:/srv/jekyll
-
+      - ./bundle_cache:/usr/local/bundle

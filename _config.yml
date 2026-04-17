@@ -56,8 +56,15 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The quieter you become, the more you are able to hear."
+  - text: "The quieter you become, the more you are able to hear"
   - text: "Stay humble and focused"
+  - text: "The best way to predict the future is to invent it"
+  - text: "Focus on being productive instead of busy"
+  - text: "Lo que no se mide, no se puede mejorar"
+  - text: "Si querés resultados distintos, no hagas siempre lo mismo"
+  - text: "Talk is cheap. Show me the code!"
+  - text: "Any sufficiently advanced technology is indistinguishable from magic"
+  - text: "You don't rise to the level of your goals, you fall to the level of your systems"
 
 
 ##############################
@@ -70,7 +77,7 @@ lines: # You can add HTML Tags in the Text
 # with your github user name.
 
 
-me-img: "https://github.com/serafincpd.png?size=500"
+me-img: "/img/me.png"
 
 ##############################
 # Color the browser elements #
@@ -196,7 +203,7 @@ pages_list:
 
 # Exclusion list from the generated _site
 
-exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts", "bundle_cache", "Dockerfile"]
 
 # Pagination path
 

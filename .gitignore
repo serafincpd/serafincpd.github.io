@@ -20,3 +20,6 @@ Rakefile
 
 # Local dir to add backup of original demo for future use
 _bak/
+
+# Docker bundle cache
+bundle_cache/
