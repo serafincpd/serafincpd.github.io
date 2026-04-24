@@ -36,6 +36,13 @@ h6 {
     letter-spacing: 1px;
 }
 
+@media(max-width:767px) {
+    h1 { font-size: 25px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 15px; }
+    ul, ol { padding-inline-start: 15px; }
+}
+
 /* Added in { Personal } */
 h4 {
     a.category {
@@ -49,11 +56,11 @@ h4 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
     @media(min-width:768px) {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 17px;
         line-height: 1.6;
     }
 }
@@ -191,10 +198,10 @@ a {
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
-            font-size: 40px;
+            font-size: 36px;
         }
         .intro-text {
-            font-size: 18px;
+            font-size: 25px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
@@ -205,10 +212,10 @@ a {
         padding: 0;
         .intro-body {
             .brand-heading {
-                font-size: 100px;
+                font-size: 80px;
             }
             .intro-text {
-                font-size: 26px;
+                font-size: 22px;
             }
         }
     }
@@ -270,9 +277,13 @@ a {
     ul,
     ol {
         margin: 0 0 25px;
-        font-size: 19px;
+        font-size: 17px;
         line-height: 1.6;
-        list-style-position: inside;
+        list-style-position: outside;
+        @media(max-width:767px) {
+            font-size: 15px;
+            line-height: 1.5;
+        }
     }
     pre {
       padding: 0;
@@ -289,6 +300,9 @@ a {
 
     /* Added in { Personal } */
     &#post {
+        h3 {
+            text-align: left;
+        }
         div.author img {
             border: 0px;
             margin-bottom: 20px;
@@ -383,7 +397,7 @@ body {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    font-size: 16px;
+    font-size: 25px;
     vertical-align: top;
     @media(min-width:768px) {
         font-size: 22px;
