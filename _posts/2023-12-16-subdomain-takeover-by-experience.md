@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Subdomain Takeover by experience
 category: tech
-tags: [ 'security' ]
+tags: [ 'Cybersecurity' ]
 ---
 
 ![Hoodie](/img/posts/subdomain-takeover-by-experience/hoodie.png)

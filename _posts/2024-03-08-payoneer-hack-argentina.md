@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Analizando algunos aspectos del hack a cuentas de Payoneer en Argentina
 category: tech
-tags: [ 'security' ]
+tags: [ 'Cybersecurity' ]
 seo:
   image: '/img/posts/payoneer-hack-argentina/sms-1.png'
 ---

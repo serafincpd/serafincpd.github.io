@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Root por accidente, escalando privilegios con Docker
 category: tech
-tags: [ 'security' ]
+tags: [ 'Cybersecurity' ]
 ---
 
 Es casi imposible negar que los Containers se han convertido en uno de los estándares mas aceptados al momento de desplegar aplicaciones en entornos Cloud, con lo cual, no resulta extraño en estos días encontrarnos con un host o server con Docker instalado.

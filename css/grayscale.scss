@@ -287,8 +287,13 @@ a {
     }
     pre {
       padding: 0;
+      overflow-x: auto;
+      white-space: pre;
+      word-break: normal;
+      word-wrap: normal;
       > code {
         text-align: left;
+        white-space: pre;
       }
     }
     img.emoji {
